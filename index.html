@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#db2763">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsivo.css">
+
+    <!-- PRELOAD DA IMAGEM HERO -->
+    <link rel="preload" as="image" href="imagens/hero.webp">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!--BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+    <!-- Open Graph / Meta Tags para compartilhamento -->
+    <meta property="og:title" content="Pedro Cardoso - Portfólio">
+    <meta property="og:description" content="Confira meus projetos de UX/UI Design e Desenvolvimento Web">
+    <meta property="og:image" content="https://pedrocardosu.github.io/pedro-assets/og-image.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pedro-cardoso-portfolio.infinityfreeapp.com/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pedro Cardoso - Portfólio">
+    <meta name="twitter:description" content="Confira meus projetos de UX/UI Design e Desenvolvimento Web">
+    <meta name="twitter:image" content="https://pedrocardosu.github.io/pedro-assets/og-image.png">
+
+    <!-- Favicon padrão (aba do navegador desktop) -->
+    <link rel="icon" type="image/x-icon" href="https://pedrocardosu.github.io/pedro-assets/favicon.ico">
+
+    <!-- Ícone para dispositivos iOS (atalho na tela inicial) -->
+    <link rel="apple-touch-icon" href="https://pedrocardosu.github.io/pedro-assets/favicon.ico">
+
+    <title>Pedro Cardoso - Portfólio</title>
+</head>
+
+<body class="site-fade">
+    <!-- ================= HEADER ================= -->
+    <header>
+        <div class="interface">
+            <section class="logotipo-cabecalho">
+                <div class="logo-container">
+                    <img src="/imagens/logotipos/logotipo-1.png" alt="Logo Base" class="logo-base">
+                    <img src="/imagens/logotipos/logotipo-2.png" alt="Logo Rolagem" class="logo-scroll">
+                </div>
+            </section>
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#sobre-mim">Sobre mim</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato"><button>Contato</button></a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-menu-mobile" id="btn-menu-mobile">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <nav class="menu-mobile" id="menu-mobile">
+                <i class="bi bi-x"></i>
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#sobre-mim">Sobre mim</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="hero">
+            <div id="particles-js"></div>
+
+            <div class="interface">
+
+                <div class="img-hero">
+                    <img class='foto-de-capa' src="/imagens/fotos/foto-hero.webp" alt="Foto de Pedro Cardoso">
+                </div>
+
+                <div class="txt-hero" data-animar>
+                    <h1>Transformo ideias em<span>Experiências digitais!</span></h1>
+                    <p>Com foco em UX Design, Web Design e Desenvolvimento Front-end,
+                        crio interfaces modernas, funcionais e focadas na experiência do usuário.</p>
+                    <a href="#contato"><BUtton>Entre em contato</BUtton></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SOBRE MIM ===== -->
+        <section class="sobre-mim" id="sobre-mim">
+            <div class="interface">
+                <div class="txt-sobre" data-animar>
+                    <h1 class="titulo-section">Sobre <span>mim</span></h1>
+                    <p>
+                        Olá! Eu sou o Pedro Cardoso, estudante de Desenvolvimento de Software Multiplataforma.
+                        Meu foco é criar experiências digitais que unem design e tecnologia, dando vida a ideias
+                        por meio de interfaces modernas e funcionais.
+                    </p>
+                    <p>
+                        Tenho um olhar voltado para UX Design, Web Design e Desenvolvimento Front-end, buscando sempre
+                        equilibrar estética e usabilidade em cada projeto.
+                        Gosto de transformar conceitos em algo visualmente atrativo, intuitivo e com propósito — seja um
+                        site, uma landing page ou uma interface completa.
+                    </p>
+                    <p>
+                        Atualmente, sigo aprendendo, explorando novas ferramentas e aprimorando minhas habilidades para
+                        construir produtos que realmente causem impacto.
+                    </p>
+
+                    <div class="btn-redes">
+                        <a href="https://www.linkedin.com/in/pedro-cardoso-perfil" target="_blank"><button><i
+                                    class="bi bi-linkedin"></i></button></a>
+                        <a href="https://wa.me/+55011994072948" target="_blank"><button><i
+                                    class="bi bi-whatsapp"></i></button></a>
+                        <a href="https://github.com/PedroCardosu" target="_blank"><button><i
+                                    class="bi bi-github"></i></button></a>
+                        <a href="https://www.instagram.com/pcardosu/" target="_blank"><button><i
+                                    class="bi bi-instagram"></i></button></a>
+                    </div>
+                </div>
+
+                <div class="img-sobre">
+                    <img src="/imagens/fotos/foto-sobre-mim.webp" alt="imagem pedro cardoso">
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SKILLS ===== -->
+        <section class="skills" id="skills">
+            <div class="interface">
+                <h1 class="titulo-section" data-animar>Minhas <span>especialidades</span></h1>
+
+                <article data-animar>
+                    <div class="box-skills">
+                        <div class="icon-skills">
+                            <img src="/imagens/icones/icone-framer.webp" alt="icone Figma">
+                            <h2>Criação de sites <span>Framer</span></h2>
+                        </div>
+                        <p>Crio sites modernos e responsivos no Framer, utilizando autolayout, componentes e animações 
+                        para entregar experiências funcionais e envolventes.
+                        </p>
+                    </div> <!-- FIM Da ESPECIALIDADE -->
+
+                    <div class="box-skills">
+                        <div class="icon-skills">
+                            <img src="/imagens/icones/icone-figma.webp" alt="icone Figma">
+                            <h2>Prototipagem <span>Figma</span></h2>
+                        </div>
+                        <p>Crio protótipos e interfaces intuitivas, transformando ideias em designs claros e funcionais.
+                        </p>
+                    </div> <!-- FIM Da ESPECIALIDADE -->
+
+                    <div class="box-skills">
+                        <div class="icon-skills">
+                            <img src="/imagens/icones/icone-html.webp" alt="icone HTML">
+                            <h2>Desenvolvimento <span>HTML</span></h2>
+                        </div>
+                        <p>Estruturo páginas e landing pages com HTML semântico, garantindo acessibilidade e
+                            organização.</p>
+                    </div> <!-- FIM Da ESPECIALIDADE -->
+
+                    <div class="box-skills">
+                        <div class="icon-skills">
+                            <img src="/imagens/icones/icone-css.webp" alt="icone CSS">
+                            <h2>Manipulação <span>CSS</span></h2>
+                        </div>
+                        <p> Dou vida aos layouts com cores, tipografia, animações e responsividade usando CSS
+                            moderno.</p>
+                    </div> <!-- FIM Da ESPECIALIDADE -->
+
+                    <div class="box-skills">
+                        <div class="icon-skills">
+                            <img src="/imagens/icones/icone-javascript.webp" alt="icone javascript">
+                            <h2>Programação <span>JavaScript</span></h2>
+                        </div>
+                        <p>Adiciono interatividade e dinamismo às páginas, manipulando elementos e eventos de forma
+                            prática.</p>
+                    </div> <!-- FIM Da ESPECIALIDADE -->
+
+                    <div class="box-skills">
+                        <div class="icon-skills">
+                            <img src="/imagens/icones/icone-adobe.webp" alt="icone Adobe Express">
+                            <h2>Adobe <span>Express</span></h2>
+                        </div>
+                        <p>Desenvolvo materiais visuais rápidos e criativos, de banners a posts, com design
+                            profissional.</p>
+                    </div> <!-- FIM Da ESPECIALIDADE -->
+
+                    <div class="box-skills">
+                        <div class="icon-skills">
+                            <img src="/imagens/icones/icone-designer.webp" alt="icone Designer">
+                            <h2>Design <span>System</span></h2>
+                        </div>
+                        <p>Organizo padrões visuais e componentes para manter consistência em projetos de interface.</p>
+                    </div> <!-- FIM Da ESPECIALIDADE -->
+
+                </article> <!-- FIM DO GRID MINHAS ESPECIALIDADES -->
+
+                <div class="btn-contato">
+                    <a href="#contato"><button>Entre em contato</button></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PORTFÓLIO ===== -->
+        <section class="portfolio" id="portfolio" data-animar>
+            <div class="interface">
+                <div class="portfolio-txt">
+                    <h1 class="titulo-section">Meu <span>portfólio</span></h1>
+                    <p>Confira alguns dos meus projetos recentes.</p>
+                </div>
+
+                <div class="portfolio-container">
+                <!-- 👇 CRIAR AQUI PARA ADICIONAR MAIS BOX DE PORTFOLIO 👇 -->
+
+
+                    <a href="https://www.figma.com/design/zSznHmLwNOO3kVcXJgE5sq/Planetas-StarWars?node-id=0-1&t=qifZ2gm2R4ULAkW0-1"
+                        target="_blank">
+                        <div class="portfolio-box projeto4" data-titulo="Landing Page Design Interativa - Star Wars">
+                            <div class="info-portfolio">Landing Page Interativa - Star Wars</div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.figma.com/design/t7lui9BkGQEFXseAo3qKxU/BerryPop?node-id=0-1&t=Gb2jusLvok8EH0Cr-1"
+                        target="_blank">
+                        <div class="portfolio-box projeto3" data-titulo="Landing Page Design Interativa - BerryPop">
+                            <div class="info-portfolio">Landing Page Interativa - BerryPop</div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.figma.com/design/JnOPbMzsHetaOtCPcPiLKB/Sem-t%C3%ADtulo?t=cL9evOoRVgoRkT0f-1"
+                        target="_blank">
+                        <div class="portfolio-box projeto2" data-titulo="Landing Page Design - Smash Legends">
+                            <div class="info-portfolio">Landing Page Design - Smash Legends</div>
+                        </div>
+                    </a>
+
+                    <a href="https://drive.google.com/file/d/1CsCpDgdZqG_eyIi4PASwfgnq4MUdKrS_/view?usp=sharing"
+                        target="_blank">
+                        <div class="portfolio-box projeto1" data-titulo="Projeto portfólio">
+                            <div class="info-portfolio">Projeto portfólio</div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Div do título visível no mobile -->
+                <div class="portfolio-titulo-mobile">
+                    Projeto...
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTATO ===== -->
+        <section class="contato" id="contato">
+            <div class="interface">
+                <div class="txt-contato" data-animar>
+                    <h1 class="titulo-section">Entre em <span>contato</span></h1>
+                    <p><i class="bi bi-envelope-at"></i>pe.lucas.cardoso@gmail.com</p>
+                    <p><i class="bi bi-whatsapp"></i>(11) 99407-2948</p>
+                </div>
+
+                <form id="form-contato" data-animar>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+                    <input type="email" id="email" name="email" placeholder="Seu email">
+                    <div class="tel-proj">
+                        <input type="tel" id="telefone" name="whatsapp" placeholder="Seu Whatsapp">
+                        <input type="text" name="titulo" id="projeto" placeholder="Assunto">
+                    </div>
+                    <textarea name="mensagem" id="mensagem" placeholder="Conte-me mais sobre o assunto"></textarea>
+
+                    <div class="btn-enviar">
+                        <input type="submit" value="enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="interface">
+            <div class="logo-footer">
+                <img src="/imagens/logotipos/logotipo-2.png" alt="logotipo rodapé">
+                <p>Todos os direitos reservados</p>
+            </div>
+
+            <div class="btn-redes">
+                <a href="https://www.linkedin.com/in/pedro-cardoso-perfil" target="_blank"><button><i
+                            class="bi bi-linkedin"></i></button></a>
+                <a href="https://wa.me/+55011994072948" target="_blank"><button><i
+                            class="bi bi-whatsapp"></i></button></a>
+                <a href="https://github.com/PedroCardosu" target="_blank"><button><i
+                            class="bi bi-github"></i></button></a>
+                <a href="https://www.instagram.com/pcardosu/" target="_blank"><button><i
+                            class="bi bi-instagram"></i></button></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#db2763">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsivo.css">
+
+    <!-- PRELOAD DA IMAGEM HERO -->
+    <link rel="preload" as="image" href="imagens/hero.webp">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!--BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+    <!-- Open Graph / Meta Tags para compartilhamento -->
+    <meta property="og:title" content="Pedro Cardoso - Portfólio">
+    <meta property="og:description" content="Confira meus projetos de UX/UI Design e Desenvolvimento Web">
+    <meta property="og:image" content="https://pedrocardosu.github.io/pedro-assets/og-image.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pedro-cardoso-portfolio.infinityfreeapp.com/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pedro Cardoso - Portfólio">
+    <meta name="twitter:description" content="Confira meus projetos de UX/UI Design e Desenvolvimento Web">
+    <meta name="twitter:image" content="https://pedrocardosu.github.io/pedro-assets/og-image.png">
+
+    <!-- Favicon padrão (aba do navegador desktop) -->
+    <link rel="icon" type="image/x-icon" href="https://pedrocardosu.github.io/pedro-assets/favicon.ico">
+
+    <!-- Ícone para dispositivos iOS (atalho na tela inicial) -->
+    <link rel="apple-touch-icon" href="https://pedrocardosu.github.io/pedro-assets/favicon.ico">
+
+    <title>Pedro Cardoso - Portfólio</title>
+</head>
+
+<body class="site-fade">
+    <!-- ================= HEADER ================= -->
+    <header>
+        <div class="interface">
+            <section class="logotipo-cabecalho">
+                <div class="logo-container">
+                    <img src="/imagens/logotipos/logotipo-1.png" alt="Logo Base" class="logo-base">
+                    <img src="/imagens/logotipos/logotipo-2.png" alt="Logo Rolagem" class="logo-scroll">
+                </div>
+            </section>
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#sobre-mim">Sobre mim</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato"><button>Contato</button></a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-menu-mobile" id="btn-menu-mobile">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <nav class="menu-mobile" id="menu-mobile">
+                <i class="bi bi-x"></i>
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#sobre-mim">Sobre mim</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="hero">
+            <div id="particles-js"></div>
+
+            <div class="interface">
+
+                <div class="img-hero">
+                    <img class='foto-de-capa' src="/imagens/fotos/foto-hero.webp" alt="Foto de Pedro Cardoso">
+                </div>
+
+                <div class="txt-hero" data-animar>
+                    <h1>Transformo ideias em<span>Experiências digitais!</span></h1>
+                    <p>Com foco em UX Design, Web Design e Desenvolvimento Front-end,
+                        crio interfaces modernas, funcionais e focadas na experiência do usuário.</p>
+                    <a href="#contato"><BUtton>Entre em contato</BUtton></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SOBRE MIM ===== -->
+        <section class="sobre-mim" id="sobre-mim">
+            <div class="interface">
+                <div class="txt-sobre" data-animar>
+                    <h1 class="titulo-section">Sobre <span>mim</span></h1>
+                    <p>
+                        Olá! Eu sou o Pedro Cardoso, estudante de Desenvolvimento de Software Multiplataforma.
+                        Meu foco é criar experiências digitais que unem design e tecnologia, dando vida a ideias
+                        por meio de interfaces modernas e funcionais.
+                    </p>
+                    <p>
+                        Tenho um olhar voltado para UX Design, Web Design e Desenvolvimento Front-end, buscando sempre
+                        equilibrar estética e usabilidade em cada projeto.
+                        Gosto de transformar conceitos em algo visualmente atrativo, intuitivo e com propósito — seja um
+                        site, uma landing page ou uma interface completa.
+                    </p>
+                    <p>
+                        Atualmente, sigo aprendendo, explorando novas ferramentas e aprimorando minhas habilidades para
+                        construir produtos que realmente causem impacto.
+                    </p>
+
+                    <div class="btn-redes">
+                        <a href="https://www.linkedin.com/in/pedro-cardoso-perfil" target="_blank"><button><i
+                                    class="bi bi-linkedin"></i></button></a>
+                        <a href="https://wa.me/+55011994072948" target="_blank"><button><i
+                                    class="bi bi-whatsapp"></i></button></a>
+                        <a href="https://github.com/PedroCardosu" target="_blank"><button><i
+                                    class="bi bi-github"></i></button></a>
+                        <a href="https://www.instagram.com/pcardosu/" target="_blank"><button><i
+                                    class="bi bi-instagram"></i></button></a>
+                    </div>
+                </div>
+
+                <div class="img-sobre">
+                    <img src="/imagens/fotos/foto-sobre-mim.webp" alt="imagem pedro cardoso">
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SKILLS ===== -->
+        <section class="skills" id="skills">
+            <div class="interface">
+                <h1 class="titulo-section" data-animar>Minhas <span>especialidades</span></h1>
+
+                <article data-animar>
+                    <div class="box-skills">
+                        <div class="icon-skills">
+                            <img src="/imagens/icones/icone-figma.webp" alt="icone Figma">
+                            <h2>Prototipagem <span>Figma</span></h2>
+                        </div>
+                        <p>Crio protótipos e interfaces intuitivas, transformando ideias em designs claros e funcionais.</p>
+                    </div> <!-- FIM Da ESPECIALIDADE -->
+
+                    <div class="box-skills">
+                        <div class="icon-skills">
+                            <img src="/imagens/icones/icone-framer.webp" alt="icone HTML">
+                            <h2>Criação com <span>Framer</span></h2>
+                        </div>
+                        <p>Crio sites modernos e responsivos no Framer, utilizando 
+                        componentes e animações para entregar experiências envolventes.</p>
+                    </div> <!-- FIM Da ESPECIALIDADE -->
+
+                    <div class="box-skills">
+                        <div class="icon-skills">
+                            <img src="/imagens/icones/icone-html.webp" alt="icone HTML">
+                            <h2>Desenvolvimento <span>HTML</span></h2>
+                        </div>
+                        <p>Estruturo páginas e landing pages com HTML semântico, garantindo acessibilidade e
+                            organização.</p>
+                    </div> <!-- FIM Da ESPECIALIDADE -->
+
+                    <div class="box-skills">
+                        <div class="icon-skills">
+                            <img src="/imagens/icones/icone-css.webp" alt="icone CSS">
+                            <h2>Manipulação <span>CSS</span></h2>
+                        </div>
+                        <p> Dou vida aos layouts com cores, tipografia, animações e responsividade usando CSS
+                            moderno.</p>
+                    </div> <!-- FIM Da ESPECIALIDADE -->
+
+                    <div class="box-skills">
+                        <div class="icon-skills">
+                            <img src="/imagens/icones/icone-javascript.webp" alt="icone javascript">
+                            <h2>Programação <span>JavaScript</span></h2>
+                        </div>
+                        <p>Adiciono interatividade e dinamismo às páginas, manipulando elementos e eventos de forma
+                            prática.</p>
+                    </div> <!-- FIM Da ESPECIALIDADE -->
+
+                    <div class="box-skills">
+                        <div class="icon-skills">
+                            <img src="/imagens/icones/icone-adobe.webp" alt="icone Adobe Express">
+                            <h2>Adobe <span>Express</span></h2>
+                        </div>
+                        <p>Desenvolvo materiais visuais rápidos e criativos, de banners a posts, com design
+                            profissional.</p>
+                    </div> <!-- FIM Da ESPECIALIDADE -->
+
+                    <div class="box-skills">
+                        <div class="icon-skills">
+                            <img src="/imagens/icones/icone-designer.webp" alt="icone Designer">
+                            <h2>Design <span>System</span></h2>
+                        </div>
+                        <p>Organizo padrões visuais e componentes para manter consistência em projetos de interface.</p>
+                    </div> <!-- FIM Da ESPECIALIDADE -->
+
+                </article> <!-- FIM DO GRID MINHAS ESPECIALIDADES -->
+
+                <div class="btn-contato">
+                    <a href="#contato"><button>Entre em contato</button></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PORTFÓLIO ===== -->
+        <section class="portfolio" id="portfolio" data-animar>
+            <div class="interface">
+                <div class="portfolio-txt">
+                    <h1 class="titulo-section">Meu <span>portfólio</span></h1>
+                    <p>Confira alguns dos meus projetos recentes.</p>
+                </div>
+
+                <div class="portfolio-container">
+                <!-- 👇 CRIAR AQUI PARA ADICIONAR MAIS BOX DE PORTFOLIO 👇 -->
+
+
+                    <a href="https://www.figma.com/design/zSznHmLwNOO3kVcXJgE5sq/Planetas-StarWars?node-id=0-1&t=qifZ2gm2R4ULAkW0-1"
+                        target="_blank">
+                        <div class="portfolio-box projeto4" data-titulo="Landing Page Design Interativa - Star Wars">
+                            <div class="info-portfolio">Landing Page Interativa - Star Wars</div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.figma.com/design/t7lui9BkGQEFXseAo3qKxU/BerryPop?node-id=0-1&t=Gb2jusLvok8EH0Cr-1"
+                        target="_blank">
+                        <div class="portfolio-box projeto3" data-titulo="Landing Page Design Interativa - BerryPop">
+                            <div class="info-portfolio">Landing Page Interativa - BerryPop</div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.figma.com/design/JnOPbMzsHetaOtCPcPiLKB/Sem-t%C3%ADtulo?t=cL9evOoRVgoRkT0f-1"
+                        target="_blank">
+                        <div class="portfolio-box projeto2" data-titulo="Landing Page Design - Smash Legends">
+                            <div class="info-portfolio">Landing Page Design - Smash Legends</div>
+                        </div>
+                    </a>
+
+                    <a href="https://drive.google.com/file/d/1CsCpDgdZqG_eyIi4PASwfgnq4MUdKrS_/view?usp=sharing"
+                        target="_blank">
+                        <div class="portfolio-box projeto1" data-titulo="Projeto portfólio">
+                            <div class="info-portfolio">Projeto portfólio</div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Div do título visível no mobile -->
+                <div class="portfolio-titulo-mobile">
+                    Projeto...
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTATO ===== -->
+        <section class="contato" id="contato">
+            <div class="interface">
+                <div class="txt-contato" data-animar>
+                    <h1 class="titulo-section">Entre em <span>contato</span></h1>
+                    <p><i class="bi bi-envelope-at"></i>pe.lucas.cardoso@gmail.com</p>
+                    <p><i class="bi bi-whatsapp"></i>(11) 99407-2948</p>
+                </div>
+
+                <form id="form-contato" data-animar>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+                    <input type="email" id="email" name="email" placeholder="Seu email">
+                    <div class="tel-proj">
+                        <input type="tel" id="telefone" name="whatsapp" placeholder="Seu Whatsapp">
+                        <input type="text" name="titulo" id="projeto" placeholder="Assunto">
+                    </div>
+                    <textarea name="mensagem" id="mensagem" placeholder="Conte-me mais sobre o assunto"></textarea>
+
+                    <div class="btn-enviar">
+                        <input type="submit" value="enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="interface">
+            <div class="logo-footer">
+                <img src="/imagens/logotipos/logotipo-2.png" alt="logotipo rodapé">
+                <p>Todos os direitos reservados</p>
+            </div>
+
+            <div class="btn-redes">
+                <a href="https://www.linkedin.com/in/pedro-cardoso-perfil" target="_blank"><button><i
+                            class="bi bi-linkedin"></i></button></a>
+                <a href="https://wa.me/+55011994072948" target="_blank"><button><i
+                            class="bi bi-whatsapp"></i></button></a>
+                <a href="https://github.com/PedroCardosu" target="_blank"><button><i
+                            class="bi bi-github"></i></button></a>
+                <a href="https://www.instagram.com/pcardosu/" target="_blank"><button><i
+                            class="bi bi-instagram"></i></button></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

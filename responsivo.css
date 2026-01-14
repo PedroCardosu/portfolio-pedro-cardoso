@@ -1,0 +1,221 @@
+/* ====================== RESPONSIVO ====================== */
+
+@media (max-width:1000px) {
+
+    /* ---------- TEXTOS ---------- */
+    h1.titulo-section {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    section p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    /* ---------- MENU ---------- */
+
+    header {
+        background-image: none;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .btn-menu-mobile,
+    .menu-mobile {
+        display: block;
+    }
+
+    header .logo-container {
+        width: 150px;
+        /* largura menor */
+        height: 55px;
+        /* altura menor */
+    }
+
+    header .logo-container img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* ===== EFEITO DE ROLAR IMAGEM NO PORTFÓLIO MOBILE ===== */
+
+    .portfolio-container .portfolio-box {
+        background-size: cover;
+        background-position: center top; /* posição inicial */
+        transition: background-position 5s ease; /* suaviza a rolagem */
+    }
+
+    /* ---------- HERO ---------- */
+
+    section.hero {
+        background-image: linear-gradient(to top, var(--pretoRico)91.7%, var(--cereja)8.3%);
+    }
+
+    .hero>.interface {
+        text-align: center;
+        gap: 64px;
+        flex-direction: column-reverse;
+    }
+
+    .hero .img-hero img {
+        max-width: 320px;
+    }
+
+    .hero .txt-hero h1 {
+        text-align: left;
+        font-size: 1.8rem;
+    }
+
+    .hero .txt-hero h1 span {
+        font-size: 2.5rem;
+    }
+
+    .hero .txt-hero p {
+        font-size: 1rem;
+        text-align: left;
+
+    }
+
+    /* ---------- SOBRE MIM ---------- */
+
+    .sobre-mim>.interface {
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    .sobre-mim .img-sobre img {
+        width: 300px;
+        height: auto;
+    }
+
+    .sobre-mim .txt-sobre p {
+        font-size: 1rem;
+    }
+
+    /* ---------- SKILLS - CARROSSEL ---------- */
+
+    section.skills article {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 16px;
+        padding-bottom: 16px;
+
+        /* Remove a barra de rolagem */
+        scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* IE e Edge */
+    }
+
+    section.skills article::-webkit-scrollbar {
+        display: none;
+        /* Chrome, Safari e Opera */
+    }
+
+    .skills img {
+        width: 50px;
+        height: auto;
+    }
+
+    .skills .box-skills {
+        flex: 0 0 80%;
+        scroll-snap-align: start;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon-skills {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    .skills .box-skills p {
+        text-align: left;
+        /* muda de justify para left */
+    }
+
+    /* ---------- PORTFÓLIO - CARROSSEL ---------- */
+
+    .portfolio>.interface {
+        max-width: 100%;
+        padding: 0 8px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio .portfolio-container {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 24px;
+        padding-bottom: 16px;
+        padding-left: 8px;
+    }
+
+    .portfolio .portfolio-container a {
+        flex: 0 0 90%;
+        scroll-snap-align: start;
+        max-width: 500px;
+        display: block;
+        text-decoration: none;
+    }
+
+    .portfolio .portfolio-container a .portfolio-box {
+        width: 100%;
+        aspect-ratio: 4 / 5; /* 🔥 proporção perfeita para mobile */
+    }
+
+    .portfolio-container .portfolio-box:hover {
+        transform: none;
+    }
+
+    .portfolio-box .info-portfolio {
+        display: none;
+        /* overlay ainda aparece */
+    }
+
+    /* TITULO PORTFOLIO MOBILE*/
+
+    .portfolio-titulo-mobile {
+        display: block; 
+        color: var(--branco);
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 16px;
+        font-weight: 600;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+        padding: 0 10%;
+    }
+
+    /* ---------- CONTATO ---------- */
+
+    .contato>.interface {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .contato form {
+        width: 100%;
+    }
+
+    .contato form .tel-proj {
+        display: block;
+    }
+
+    /* ---------- RODAPÉ ---------- */
+
+    footer>.interface {
+        flex-direction: column-reverse;
+        gap: 32px;
+        text-align: center;
+    }
+}
